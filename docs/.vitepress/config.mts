@@ -8,6 +8,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'favicon.ico',
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/vue-with-typescript/setting-up-new-vue-project' },
     ],
