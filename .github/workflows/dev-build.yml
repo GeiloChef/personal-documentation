@@ -1,8 +1,8 @@
-name: Dev Build
+pname: Dev Build
 on:
   push:
     branches:
-      - dev
+      - develop
 
 jobs:
   publish:
@@ -23,7 +23,7 @@ jobs:
         with:
           repository-name: GeiloChef/personal-documentation
           ssh-key: ${{ secrets.DEPLOY_KEY }}
-          branch: master
+          branch: develop
           folder: docs/.vitepress/dist
           clean: true
           clean-exclude: |
