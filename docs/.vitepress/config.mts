@@ -19,13 +19,11 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Vue with Typescript',
+        text: 'Custom Styles (CSS)',
         items: [
-          { text: 'Setting up a new project', link: '/vue-with-typescript/setting-up-new-vue-project' },
-          { text: 'Add Tailwind to Vue', link: '/vue-with-typescript/add-tailwind-css' },
-          { text: 'Add Vue I18n', link: '/vue-with-typescript/add-vue-i18n' },
-          { text: 'Add Fontawesome Icons', link: '/vue-with-typescript/add-fontawesome-icon-to-vue' },
-          { text: 'Add PrimeVue', link: '/vue-with-typescript/add-primevue' },
+          { text: 'Custom Scrollbar', link: '/custom-styles/custom-scrollbar' },
+          { text: 'Hide Scrollbar', link: '/custom-styles/hide-scrollbar' },
+          { text: 'Target iOS only', link: '/custom-styles/target-only-ios-in-css' },
         ]
       },
       {
@@ -51,23 +49,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Custom Styles (CSS)',
+        text: 'PrimeVue',
         items: [
-          { text: 'Custom Scrollbar', link: '/custom-styles/custom-scrollbar' },
-          { text: 'Hide Scrollbar', link: '/custom-styles/hide-scrollbar' },
-          { text: 'Target iOS only', link: '/custom-styles/target-only-ios-in-css' },
+          { text: 'Use FontAwesome Icon with PrimeVue buttons', link: '/primevue/button-with-fontawesome-icons' },
+        ]
+      },
+      {
+        text: 'Vue with Typescript',
+        items: [
+          { text: 'Setting up a new project', link: '/vue-with-typescript/setting-up-new-vue-project' },
+          { text: 'Add Tailwind to Vue', link: '/vue-with-typescript/add-tailwind-css' },
+          { text: 'Add Vue I18n', link: '/vue-with-typescript/add-vue-i18n' },
+          { text: 'Add Fontawesome Icons', link: '/vue-with-typescript/add-fontawesome-icon-to-vue' },
+          { text: 'Add PrimeVue', link: '/vue-with-typescript/add-primevue' },
         ]
       },
       {
         text: 'VitePress',
         items: [
           { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
-        ]
-      },
-      {
-        text: 'PrimeVue',
-        items: [
-          { text: 'Use FontAwesome Icon with PrimeVue buttons', link: '/primevue/button-with-fontawesome-icons' },
         ]
       },
     ],
