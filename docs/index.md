@@ -4,22 +4,14 @@ layout: home
 
 hero:
   name: "Personal Documentation"
-  text: "The Docuentation that helps me to get along with coding."
-  tagline: My great project tagline
+  text: "The Documentation that helps me to get along with coding."
+  tagline: Start with the most common ones!
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Create a new Vue Project
+      link: /vue-with-typescript/setting-up-new-vue-project
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: Custom CSS Scrollbar
+      link: /custom-styles/custom-scrollbar
 ---
 
