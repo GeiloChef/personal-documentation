@@ -1,6 +1,11 @@
 name: Release Build
 on:
-  workflow_dispatch
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   publish:
@@ -17,10 +22,8 @@ jobs:
           npm install --non-interactive
           npm run docs:build
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
-          repository-name: GeiloChef/personal-documentation
-          branch: master
           folder: docs/.vitepress/dist
           clean: true
           clean-exclude: |
