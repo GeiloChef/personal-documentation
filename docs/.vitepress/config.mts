@@ -12,7 +12,7 @@ export default defineConfig({
       { text: 'Home', link: '/vue-with-typescript/setting-up-new-vue-project' },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/GeiloChef/personal-documentation' }
     ],
     sidebar: [
       {
@@ -62,5 +62,8 @@ export default defineConfig({
         ]
       },
     ],
+    footer: {
+      copyright: '© Felix Dziatkowski'
+    }
   }
 })
