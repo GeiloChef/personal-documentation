@@ -21,6 +21,12 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: 'Axios',
+        items: [
+          { text: 'Setup Axios Instance to Vue 3', link: '/axios/create-axios-instance' },
+        ]
+      },
+      {
         text: 'Custom Styles (CSS)',
         items: [
           { text: 'Custom Scrollbar', link: '/custom-styles/custom-scrollbar' },
