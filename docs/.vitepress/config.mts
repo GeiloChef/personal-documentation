@@ -64,6 +64,12 @@ export default defineConfig({
           { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
         ]
       },
+      {
+        text: 'PrimeVue',
+        items: [
+          { text: 'Use FontAwesome Icon with PrimeVue buttons', link: '/primevue/button-with-fontawesome-icons' },
+        ]
+      },
     ],
     footer: {
       copyright: '© Felix Dziatkowski'
