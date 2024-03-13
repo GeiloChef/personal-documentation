@@ -38,6 +38,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Github Pages',
+        items: [
+          { text: 'Deploy a static Webpage on GitHub Pages', link: '/github-pages/how-to-deploy-on-github-pages' },
+          { text: 'Build a static Webpage with Github Actions', link: '/github-pages/build-static-pages-with-github-actions' },
+        ]
+      },
+      {
         text: 'Custom Styles (CSS)',
         items: [
           { text: 'Custom Scrollbar', link: '/custom-styles/custom-scrollbar' },
