@@ -41,7 +41,14 @@ export default defineConfig({
         items: [
           { text: 'Custom Scrollbar', link: '/custom-styles/custom-scrollbar' },
           { text: 'Hide Scrollbar', link: '/custom-styles/hide-scrollbar' },
-          { text: 'Target iOS only', link: '/custom-styles/target-only-ios-in-css' },]
+          { text: 'Target iOS only', link: '/custom-styles/target-only-ios-in-css' },
+        ]
+      },
+      {
+        text: 'VitePress',
+        items: [
+          { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
+        ]
       },
     ],
 
