@@ -7,10 +7,13 @@ export default defineConfig({
   ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: 'favicon.ico',
     nav: [
       { text: 'Home', link: '/vue-with-typescript/setting-up-new-vue-project' },
     ],
-
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    ],
     sidebar: [
       {
         text: 'Vue with Typescript',
@@ -59,9 +62,5 @@ export default defineConfig({
         ]
       },
     ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
   }
 })
