@@ -1,4 +1,4 @@
-pname: Dev Build
+name: Dev Build
 on:
   push:
     branches:
