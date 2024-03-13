@@ -33,6 +33,7 @@ export default defineConfig({
         text: 'Github',
         items: [
           { text: 'Create New Repository', link: '/github/create-new-empty-repository' },
+          { text: 'Push local Repository to GitHub', link: '/github/push-existing-repository-to-github' },
         ]
       },
       {
