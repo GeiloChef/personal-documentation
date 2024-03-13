@@ -1,0 +1,31 @@
+name: Release Build
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '18'
+      - name: Build website
+        run: |
+          npm install --non-interactive
+          npm run docs:build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          repository-name: GeiloChef/personal-documentation
+          branch: master
+          folder: docs/.vitepress/dist
+          clean: true
+          clean-exclude: |
+            "CNAME"
+            ".gitattributes"
+          single-commit: true
