@@ -20,5 +20,5 @@ Now you can click on `Create repository` on the bottom right.
 
 ___
 
-*You have now successfully created an empty GitHub*
+*:heavy_check_mark: You have now successfully created an empty GitHub.*
 

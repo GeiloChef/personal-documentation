@@ -6,9 +6,11 @@ outline: deep
 
 You can force-hide the scrollbar for a certain element by adding a custom class.
 
-```css
+::: code-group
+
+```css [main.css]
+/* Hide scrollbar */
 .hide-scrollbar {
-    /* hide scroll bar*/
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -20,10 +22,14 @@ You can force-hide the scrollbar for a certain element by adding a custom class.
 }
 ```
 
-```vue
-<div class="hide-scrollbar">
-  ...
-  context that would create a scroll bar we want to hide
-  ...
-</div>
+```vue [vue template]
+<template>
+    <div class="hide-scrollbar">
+      ...
+      context that would create a scroll bar we want to hide
+      ...
+    </div>
+</template>
 ```
+
+:::

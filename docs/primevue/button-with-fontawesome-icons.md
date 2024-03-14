@@ -4,17 +4,18 @@ outline: deep
 
 # PrimeVue Button with FontAwesome Icons
 
-> Before you start, make sure you have all necessary dependencies
-> installed:
-> 1. PrimeVue - [Installation guide for Vue 3]('/vue-with-typescript/add-primevue')
-> 2. Tailwind Css - [Installation guide for Vue 3]('/vue-with-typescript/add-tailwind-css')
-> 3. Fontawesome Icons - [Installation guide for Vue 3]('/vue-with-typescript/add-fontawesome-icon-to-vue')
-> 
-> Additionally, you need to add the icon `fa-spinner` into your Fontawesome Icon Library.
-> 
-> ---
-> *This guide was made for `PrimeVue Version 3.46.0`.*
-
+::: info
+ Before you start, make sure you have all necessary dependencies
+ installed:
+1. PrimeVue - [Installation guide for Vue 3]('/vue-with-typescript/add-primevue')
+2. Tailwind Css - [Installation guide for Vue 3]('/vue-with-typescript/add-tailwind-css')
+3. Fontawesome Icons - [Installation guide for Vue 3]('/vue-with-typescript/add-fontawesome-icon-to-vue')
+ 
+ :warning: Additionally, you need to add the icon `fa-spinner` into your Fontawesome Icon Library.
+ 
+ ---
+ *This guide was made for `PrimeVue Version 3.46.0`.*
+:::
 ## 1. Add a custom component
 
 ```vue

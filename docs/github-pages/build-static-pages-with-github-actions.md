@@ -13,28 +13,31 @@ your Webpage will always be on the latest version.
 In this case we always build the static webpage whenever a new commit is pushed
 to the branch `main`. 
 
-> For testing purposes it might be better to change from 
-> ```yaml
-> on:
->   push:
->    branches:
->      - main
-> ```
-> to 
-> ```yaml
-> on:
->   dispatch-workflow
-> ```
-> Then you can start the workflow yourself from the `actions` tab of your
-> repository.
+::: info
+ For testing purposes it might be better to change from 
+ ```yaml
+ on:
+   push:
+    branches:
+      - main
+ ```
+ to 
+ ```yaml
+ on:
+   dispatch-workflow
+ ```
+ Then you can start the workflow yourself from the `actions` tab of your
+ repository.
+:::
 
-> It is important to set the permission for the workflow in case you don't
-> use a GitHub access token
-> ```yaml
-> permissions:
->   contents: write
-> ```
-
+::: warning
+ It is important to set the permission for the workflow in case you don't
+ use a GitHub access token
+ ```yaml
+ permissions:
+   contents: write
+ ```
+:::
 
 ### The full `release-build.yml` file
 ```yaml

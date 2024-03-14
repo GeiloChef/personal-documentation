@@ -69,10 +69,18 @@ test-coverage created by the test suite also gives you information about where y
 
 ### Inside a `test` folder
 
-```
+::: code-group
+```[Inside a test folder]
 ...
 └───src
+    └───assets
+    └───components
+        | MyComponent.vue
+        | ...
     | ...
+    └───utils
+        | coreUtils.test.ts <-- this tests the util files below
+        | ...
     | ...
     └───test
         └───components
@@ -81,14 +89,9 @@ test-coverage created by the test suite also gives you information about where y
         └───utils
             | util test files
             | ...
-       └───...
-            | util test files
-            | ...
 ```
 
-### With the file you're testing
-
-```
+```[Inside a the folder youre testing]
 ...
 └───src
     └───assets
@@ -103,4 +106,4 @@ test-coverage created by the test suite also gives you information about where y
         | ...
 
 ```
-
+:::

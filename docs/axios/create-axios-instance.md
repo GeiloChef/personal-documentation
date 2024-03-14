@@ -8,8 +8,14 @@ An axios instance will make your life with axios in Vue 3 very easy. You can set
 parameters and default headers without having to add those information to every call you make in your
 API-layer.
 
+
 ## 1. Create axios instance
-```typescript
+::: info
+It does make sense to have a separate instance just for the authentication calls!
+:::
+
+::: code-group
+```typescript [axiosInstance.ts]
 // axios/axiosInstance.ts
 
 import axios from 'axios';
@@ -42,7 +48,7 @@ instance.defaults.headers.common = {
 export default instance;
 ```
 
-```typescript
+```typescript [axiosAuthInstance.ts]
 // axios/axiosAuthInstance.ts
 
 import axios from 'axios';
@@ -54,10 +60,13 @@ const instance = axios.create({
 
 export default instance;
 ```
-
-> It does make sense to have a separate instance just for the authentication calls!
+:::
 
 ### Export your Axios instances
+
+In order to use the just created axios instances globally, lets add a `index.ts` inside the folder structure
+to easily import the instances everywhere.
+
 ```typescript
 // axios/index.ts
 
@@ -80,7 +89,9 @@ export const fetchSomeInformationFromBackend = async (yourData = 'test1'): Axios
 };
 ```
 
-> This will call the base api url from the axios instance setup and add the params, as well as the
-> default parameter to the request. The final request url will look like this: 
-> 
-> `https://your-base-url.com/api/your-endpoint?data=test1&locale=de&populate=*`
+::: info
+This will call the base api url from the axios instance setup and add the params, as well as the
+default parameter to the request. The final request url will look like this: 
+
+`https://your-base-url.com/api/your-endpoint?data=test1&locale=de&populate=*`
+:::

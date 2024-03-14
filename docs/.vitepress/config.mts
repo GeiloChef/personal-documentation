@@ -5,6 +5,15 @@ export default defineConfig({
   title: "Personal Documentation",
   description: "The Documentation that helps me to get along with coding.",
   ignoreDeadLinks: true,
+  markdown: {
+    container: {
+      tipLabel: ':bulb: Tip :bulb:',
+      warningLabel: ':warning: Warning :warning:',
+      dangerLabel: ':heavy_exclamation_mark: Danger :heavy_exclamation_mark:',
+      infoLabel: ':mag_right: Info',
+      detailsLabel: 'Details'
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'favicon.ico',

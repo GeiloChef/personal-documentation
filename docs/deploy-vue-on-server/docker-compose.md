@@ -37,12 +37,10 @@ networks:
   web:
     external: true
 ```
-___
-### Caution!
+::: warning
 To make the lighttpd work, it's important to leave the setting for tty as true
 > tty: true
-
-___
+:::
 
 This `docker-compose.yml` needs an already set up traefik network in your portainer instance. In our Example,
 the network we used is called `web`.

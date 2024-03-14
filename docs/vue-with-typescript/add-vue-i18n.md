@@ -39,7 +39,8 @@ src
 The `config.ts` is where we get all translations, and initiate the vue-i18n instance. In order to use it in
 the `main.ts` later on, we need to `export` it.
 
-```typescript
+::: code-group
+```typescript  [i18n/config.ts]
 import { createI18n } from 'vue-i18n';
 
 // import the json files that store the translations in order to use them in your vue project
@@ -47,7 +48,7 @@ import deutsch from './de.json';
 import english from './en.json';
 import spanish from './es.json';
 
-// import constant with preset information - see model below
+// import constant with preset information - see core.ts
 import { Languages } from '@/models/core';
 
 // create object that stores the translated messages
@@ -68,7 +69,7 @@ export const i18n = createI18n({
 });
 ```
 
-```typescript
+```typescript [core.ts (for constant)]
 // @/models/core.ts
 export const Languages: LanguagesObject = {
   german: {
@@ -94,6 +95,7 @@ export const Languages: LanguagesObject = {
   }
 };
 ```
+:::
 
 ### Add the instance to the `main.ts`
 

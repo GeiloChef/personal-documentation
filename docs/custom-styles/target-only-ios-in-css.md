@@ -14,5 +14,6 @@ css-selector `@supports (-webkit-hyphens:none)`
     }
 }
 ```
-
+::: info
 The css-selector `@supports` can also be handy to target other browsers / engines.
+:::

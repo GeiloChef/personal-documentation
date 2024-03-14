@@ -23,8 +23,10 @@ of your repository.
 1. Select the Source to be `Deploy from a branch`
 2. Select the Branch `gh-pages` to be the branch that will be deployed
 
-> After selecting `Deploy from a branch` for the first time it might take some time to do the first run. Only after
-> that the branch `gh-pages` is created on your repository, and you can select it in the dropdown.
+::: info
+ After selecting `Deploy from a branch` for the first time it might take some time to do the first run. Only after
+ that the branch `gh-pages` is created on your repository, and you can select it in the dropdown.
+:::
 
 ![Github Repository Settings](./img/github-pages-settings-1.png)
 
@@ -51,11 +53,13 @@ documentation, follow the steps on the
 | @    | AAAA  | 2606:50c0:8003::153 |
 | www  | CNAME | geilochef.github.io |
 
-> For subdomains, you only have to set the `CNAME`!
+::: info
+For subdomains, you only have to set the `CNAME`!
 
 | Host | Type  | Destination         |
 |------|-------|---------------------|
 | docs | CNAME | geilochef.github.io |
+:::
 
 
 #### 3.2 Enter the custom domain in the GitHub pages settings of your repository
@@ -65,7 +69,9 @@ click on "Check DNS Settings". This might take some while and possible will at
 first fail. If you set the settings from above, just wait some time and try
 again - it will eventually work for sure.
 
-**Last bust not least, tick the checkbox for `Enforce HTTPS` to ensure your
-page will only be served over HTTPS**
+::: tip
+Tick the checkbox for `Enforce HTTPS` to ensure your
+page will only be served over HTTPS
+:::
 
 ![Github Repository Settings](./img/github-pages-settings-2.png)
