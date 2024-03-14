@@ -67,7 +67,7 @@ router.beforeEach((to: RouteLocationNormalized, from: RouteLocationNormalized, n
 export default router;
 ```
 
-```typescript
+```typescript [stores/userInfoStore.ts]
 // stores/userInfoStore.ts
 
 // ... imports
