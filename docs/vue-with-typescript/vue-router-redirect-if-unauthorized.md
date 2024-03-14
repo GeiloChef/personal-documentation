@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Redirect User if he tries to access a Route in your Vue 3 Application
+# Redirect Unauthenticated Users from private routes
 
 If you want to prevent a user from accessing a route he's not supposed to, you can make use of the 
 `beforeEach` hook of the Vue router instance you created in the `router/index.ts`.
