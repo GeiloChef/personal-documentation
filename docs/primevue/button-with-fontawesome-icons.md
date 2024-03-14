@@ -14,7 +14,9 @@ outline: deep
  :warning: Additionally, you need to add the icon `fa-spinner` into your Fontawesome Icon Library.
  
  ---
- *This guide was made for `PrimeVue Version 3.46.0`.*
+<div style="text-align: right; font-style: italic">
+ This guide was made for  <Badge type="tip" text="PrimeVue v3.46.0" />
+</div>
 :::
 ## 1. Add a custom component
 
