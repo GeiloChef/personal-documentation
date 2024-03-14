@@ -77,6 +77,7 @@ export default defineConfig({
           { text: 'Setting up a new project', link: '/vue-with-typescript/setting-up-new-vue-project' },
           { text: 'Vue 3 Folder Structure', link: '/vue-with-typescript/folder-structure' },
           { text: 'Vue Router Configuration', link: '/vue-with-typescript/vue-router-configuration' },
+          { text: 'Redirect if unauthorized', link: '/vue-with-typescript/vue-router-redirect-if-unauthorized' },
           { text: 'Add Tailwind to Vue', link: '/vue-with-typescript/add-tailwind-css' },
           { text: 'Add Vue I18n', link: '/vue-with-typescript/add-vue-i18n' },
           { text: 'Add Fontawesome Icons', link: '/vue-with-typescript/add-fontawesome-icon-to-vue' },
