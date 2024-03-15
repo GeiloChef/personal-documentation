@@ -7,11 +7,15 @@ hero:
   text: "The Documentation that helps me to get along with coding."
   tagline: Start with the most common ones!
   actions:
+    - theme: alt
+      text: Anti Corruption Layer
+      link: /vue-with-typescript/anti-corruption-layer
     - theme: brand
       text: Create a new Vue Project
       link: /vue-with-typescript/setting-up-new-vue-project
-    - theme: alt
-      text: Custom CSS Scrollbar
-      link: /custom-styles/custom-scrollbar
+
+features:
+- title: Easy to follow
+  details: The instructions are step-by-step and easy to follow.
 ---
 

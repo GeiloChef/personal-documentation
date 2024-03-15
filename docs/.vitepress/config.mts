@@ -22,7 +22,7 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Deploy a Vue Project', link: '/vue-with-typescript/setting-up-new-vue-project' },
+      { text: 'Anti Corruption Layer', link: '/vue-with-typescript/anti-corruption-layer' },
       { text: 'Vue 3 Folder Structure', link: '/vue-with-typescript/folder-structure' },
     ],
     socialLinks: [
