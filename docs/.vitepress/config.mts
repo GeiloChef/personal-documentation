@@ -88,6 +88,7 @@ export default defineConfig({
       {
         text: 'VitePress',
         items: [
+          { text: 'Setup new Vitepress Project', link: '/vitepress/setup-new-vitepress-project' },
           { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
         ]
       },
