@@ -7,9 +7,9 @@ outline: deep
 ::: info
  Before you start, make sure you have all necessary dependencies
  installed:
-1. PrimeVue - [Installation guide for Vue 3]('/vue-with-typescript/add-primevue')
-2. Tailwind Css - [Installation guide for Vue 3]('/vue-with-typescript/add-tailwind-css')
-3. Fontawesome Icons - [Installation guide for Vue 3]('/vue-with-typescript/add-fontawesome-icon-to-vue')
+1. PrimeVue - [Installation guide for Vue 3](/vue-with-typescript/add-primevue)
+2. Tailwind Css - [Installation guide for Vue 3](/vue-with-typescript/add-tailwind-css)
+3. Fontawesome Icons - [Installation guide for Vue 3](/vue-with-typescript/add-fontawesome-icon-to-vue)
  
  :warning: Additionally, you need to add the icon `fa-spinner` into your Fontawesome Icon Library.
  

@@ -13,7 +13,7 @@ Follow the following steps to deploy a static web page on GitHub pages.
 
 You can make use of GitHub actions to automatically re-build your application once you push something to a certain
 branch. For this, follow the Guide
-[How to build a static webpage with GitHub Pages]('/github-pages/build-static-pages-with-github-actions').
+[How to build a static webpage with GitHub Pages](/github-pages/build-static-pages-with-github-actions).
 
 ### 2. Setup GitHub pages in the settings of your repository
 
@@ -38,7 +38,7 @@ To use your own domain you have to do two things.
 
 The following settings are what you need to set in your providers DNS config for your Domain. For a detailed
 documentation, follow the steps on the
-[Official Documentation]('https://docs.github.com/de/pages/configuring-a-custom-domain-for-your-github-pages-site').
+[Official Documentation](https://docs.github.com/de/pages/configuring-a-custom-domain-for-your-github-pages-site').
 
 | Host | Type  | Destination         |
 |------|-------|---------------------|
