@@ -61,4 +61,46 @@ Title and description can be changed at any time.
 
 ___
 
+## Edit your Config
+
+### Ignore dead links
+
+In some cases you might face an issue when building your Vitepress Application, because you have dead links
+inside your documentation. If you're sure, that all your links are redirecting where they should, you can
+add ´ignoreDeadLinks: true´ into your Vitepress `config.mts`
+
+```typescript {4}
+export default defineConfig({
+  title: "Your Title",
+  description: "Your Description.",
+  ignoreDeadLinks: true,
+  //... routes and more
+});
+```
+
+### Custom Container Label Config
+
+::: info
+Vitepress lets you add custom container like this one on default. If you want to change the labels for 
+all the custom container types, you can set them in your `config.mts` like this:
+
+```typescript {4-12}
+export default defineConfig({
+  title: "Your Title",
+  description: "Your Description.",
+  markdown: {
+    container: {
+      tipLabel: ':bulb: Tip :bulb:',
+      warningLabel: ':warning: Warning :warning:',
+      dangerLabel: ':heavy_exclamation_mark: Danger :heavy_exclamation_mark:',
+      infoLabel: ':mag_right: Info',
+      detailsLabel: 'Details'
+    }
+  },
+  //... routes and more
+});
+```
+:::
+
+
 For more information, see the [Official Documentation](https://vitepress.dev/guide/getting-started).
