@@ -113,4 +113,4 @@ app.use(i18n);
 ```
 
 ---
-Also check the [Official Documentation]('https://kazupon.github.io/vue-i18n/installation.html#compatibility-note')
+Also check the [Official Documentation](https://kazupon.github.io/vue-i18n/installation.html#compatibility-note)

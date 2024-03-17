@@ -80,7 +80,6 @@ export default defineConfig({
 
 ### Custom Container Label Config
 
-::: info
 Vitepress lets you add custom container like this one on default. If you want to change the labels for 
 all the custom container types, you can set them in your `config.mts` like this:
 
@@ -100,7 +99,6 @@ export default defineConfig({
   //... routes and more
 });
 ```
-:::
-
+___
 
 For more information, see the [Official Documentation](https://vitepress.dev/guide/getting-started).
