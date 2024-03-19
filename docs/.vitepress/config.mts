@@ -91,6 +91,7 @@ export default defineConfig({
           { text: 'Setup new Vitepress Project', link: '/vitepress/setup-new-vitepress-project' },
           { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
           { text: 'Custom Theme and Components', link: '/vitepress/custom-theme-and-components' },
+          { text: 'Add Tailwind to Vitepress', link: '/vitepress/add-tailwind-css-to-vitepress' },
         ]
       },
     ],

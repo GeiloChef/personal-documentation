@@ -13,7 +13,8 @@ Make sure to use the correct folder structure, otherwise your changes won't work
 
 ## Customize your Theme
 
-You can easily customize the style of your application by overwriting the scss variables.
+You can easily customize the style of your application by overwriting the scss variables. If the files are 
+not existing yet, Just create them in the **mentioned folder** *(.vitepress/theme/...)*.
 
 ::: code-group
 ```typescript [.vitepress/theme/index.ts]
@@ -24,6 +25,7 @@ export default DefaultTheme
 ```
 
 ```css [.vitepress/theme/custom.css]
+/* example */
 :root {
     --vp-c-brand-1: #646cff;
     --vp-c-brand-2: #747bff;
