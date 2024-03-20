@@ -98,7 +98,7 @@ You might face an issue that the action fails to run. If that is the case, you c
 on:
   push:
   branches:
-    - main
+    - release-build
 name: Deploy website on push
 jobs:
   web-deploy:
