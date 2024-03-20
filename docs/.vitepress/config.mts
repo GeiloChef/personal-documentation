@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Personal Documentation",
   description: "The Documentation that helps me to get along with coding.",
-  ignoreDeadLinks: true,
+  ignoreDeadLinks: false ,
   markdown: {
     container: {
       tipLabel: ':bulb: Tip :bulb:',

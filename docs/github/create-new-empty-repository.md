@@ -5,7 +5,7 @@ outline: deep
 # Create new empty GitHub Repository
 
 ## 1. Open the page of your repositories
-Go to the [Repository Tab](www.github.com/GeiloChef?tab=repositories) and click on `New` on the top right.
+Go to the [Repository Tab](https://www.github.com/GeiloChef?tab=repositories) and click on `New` on the top right.
 
 ![Gitub Repository Tab](./img/github-create-new-repository.png)
 
