@@ -46,9 +46,15 @@ export default defineConfig({
       {
         text: 'Deploy Vue 3 Frontend',
         items: [
-          { text: 'Create Dockerfile', link: '/deploy-vue-on-server/dockerfile-for-vue-frontend' },
-          { text: 'Github action to create Container', link: '/deploy-vue-on-server/github-action-to-build-containers' },
-          { text: 'Docker Compose file for Portainer', link: '/deploy-vue-on-server/docker-compose' },
+          {
+            text: 'Deploy with Docker',
+            items: [
+              { text: 'Create Dockerfile', link: '/deploy-vue-on-server/dockerfile-for-vue-frontend' },
+              { text: 'Github action to create Container', link: '/deploy-vue-on-server/github-action-to-build-containers' },
+              { text: 'Docker Compose file for Portainer', link: '/deploy-vue-on-server/docker-compose' },
+            ]
+          },
+          { text: 'Deploy on Webspace', link: '/deploy-vue-on-server/deploy-on-webserver' },
         ]
       },
       {
