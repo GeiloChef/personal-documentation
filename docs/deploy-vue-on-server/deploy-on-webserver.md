@@ -18,13 +18,29 @@ In this tutorial we assume that you're trying to deploy a `Vitepress` applicatio
 3. Create a GitHub action to copy that Build to your webspace
 
 
-## 1. Create a GitHub Action to Build the Application and push it to a Branch
+## 1. Set up your Webspace
 
-First thing we need is a GitHub Action to build you Vue Application. With the below action we build the static
-frontend and push it to a new branch, in this case `release-build`. Make sure you adjust the `FOLDER` to 
-be the folder the built will end up in. 
+Next step is to set up your Webspace. To keep it general, you need take care of the following steps. If you're
+stuck on anything, check out the documentation of your webhoster.
 
-For Example: 
+### Step you need to do
+- have a domain or create a subdomain for your application
+- create a folder on your webspace where we can push our files to
+- create an FTP-user that we will only use for GitHub
+
+::: tip
+In this example we create a parent folder called `github-actions`, where we can then deploy multiple 
+applications in the sub-folders.
+:::
+
+### 2. Create a GitHub action to copy that Build to your webspace
+
+Now we can create a GitHub Action to build you Vue Application and transfer the built to our webspace
+via FTP. With the below action we build the static
+frontend and push it to a new branch, in this case `release-build`. Make sure you adjust the `FOLDER` to
+be the folder the built will end up in.
+
+For Example:
 - `Vitepress`: `docs/.vitepress/dist`
 - `Vue`: `/dist`
 
@@ -34,6 +50,14 @@ You have to create the branch you want to copy the file onto before you first ru
 **Please note that you will overwrite ALL files on the branch you will save the build on. So make sure you
 do not save it on `main`, `master` or any feature branch you are working on**
 :::
+
+::: warning
+You might face an issue that the action fails to run. If that is the case, you can just create an empty
+`.ftp-deploy-sync-state.json` inside the destination folder.
+:::
+
+Make sure the `web-deploy` action depends on the `build` action in order to always deploy the newest version
+of your application right after it was build.
 
 ```yaml
 name: Release Build FTP
@@ -46,7 +70,7 @@ permissions:
   contents: write
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -64,58 +88,24 @@ jobs:
         env:
           REPO: self
           BRANCH: release-build # The branch name where you want to push the assets
-          FOLDER: docs/.vitepress/dist # The folder where the build will end up in the build environment
+          FOLDER: docs/.vitepress/dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
-```
-
-## 2. Set up your Webspace
-
-Next step is to set up your Webspace. To keep it general, you need take care of the following steps. If you're
-stuck on anything, check out the documentation of your webhoster.
-
-### Step you need to do
-- have a domain or create a subdomain for your application
-- create a folder on your webspace where we can push our files to
-- create an FTP-user that we will only use for GitHub
-
-::: tip
-In this example we create a parent folder called `github-actions`, where we can then deploy multiple 
-applications in the sub-folders.
-:::
-
-### 3. Create a GitHub action to copy that Build to your webspace
-
-Last step is to create a GitHub action that will take the built from our branch and transfer the files to 
-our webspace. 
-
-::: warning
-You might face an issue that the action fails to run. If that is the case, you can just create an empty
-`.ftp-deploy-sync-state.json` inside the destination folder.
-:::
-
-```yaml
-on:
-  push:
-  branches:
-    - release-build
-name: Deploy website on push
-jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    needs: publish
     steps:
-    - name: Get latest code
-      uses: actions/checkout@v4
-      with:
+      - name: Get latest code
+        uses: actions/checkout@v4
+        with:
           ref: 'release-build'
-    
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
-        server-dir: 'spanish-for-beginners/'
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: 'spanish-for-beginners/'
 ```

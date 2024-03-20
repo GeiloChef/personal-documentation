@@ -54,7 +54,7 @@ export default defineConfig({
               { text: 'Docker Compose file for Portainer', link: '/deploy-vue-on-server/docker-compose' },
             ]
           },
-          { text: 'Deploy on Webspace', link: '/deploy-vue-on-server/deploy-on-webserver' },
+          { text: 'Deploy on Webspace', link: '/deploy-vue-on-server/deploy-on-webserver//' },
         ]
       },
       {
