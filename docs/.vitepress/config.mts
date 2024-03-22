@@ -72,6 +72,12 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Hosting',
+        items: [
+          { text: 'Protect directories with a .htpasswd', link: '/hosting/protect-a-folder-with-htpasswd' },
+        ]
+      },
+      {
         text: 'PrimeVue',
         items: [
           { text: 'Use FontAwesome Icon with PrimeVue buttons', link: '/primevue/button-with-fontawesome-icons' },
