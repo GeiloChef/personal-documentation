@@ -74,8 +74,8 @@ library.add(
 
 // import font awesome icon component
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-// import the config.ts we just created
-import { i18n } from '@/i18n/config';
+/* add all icon we need to the font-awesome library */
+import '/src/icons/fontAwesomeIconsConfig';
 
 // add font awesome icon component for global usage
 app.component('font-awesome-icon', FontAwesomeIcon);

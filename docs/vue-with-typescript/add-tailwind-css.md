@@ -28,7 +28,7 @@ npx tailwindcss init -p
 documentation if you come across issues.*
 
 ``` css
-/* ./src/index.css */
+/* ./src/assets/main.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,7 +41,7 @@ to the ***main.ts*** of your project.
 // src/main.js
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+import './assets/main.css'
 
 createApp(App).mount('#app')
 ```
