@@ -7,9 +7,12 @@ outline: deep
 With Vue I18n you can easily add internationalisation to your vue application. 
 
 ### Add vue-i18n package
-
+::: warning
+Make sure you install the correct version (<Badge type="tip" text="^9.9.0" />), otherwise vue-i18n will not have the
+default export to create the i18n instance in your config file.
+:::
 ```console
-npm install vue-i18n@8
+npm install vue-i18n@9.9.0
 ```
 
 ### Create Folder for translations
