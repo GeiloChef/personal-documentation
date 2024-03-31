@@ -14,20 +14,17 @@ In this case we always build the static webpage whenever a new commit is pushed
 to the branch `main`. 
 
 ::: info
- For testing purposes it might be better to change from 
+ With `workflow_dispatch:` you can run you script manually on the `actions` tab of your repository.
+
+The `push` hook lets this workflow run, whenever a push is made to the branch passed to it. In this
+case its `main`.
  ```yaml
  on:
-   push:
+  workflow_dispatch:
+  push:
     branches:
       - main
  ```
- to 
- ```yaml
- on:
-   dispatch-workflow
- ```
- Then you can start the workflow yourself from the `actions` tab of your
- repository.
 :::
 
 ::: warning
@@ -39,13 +36,23 @@ to the branch `main`.
  ```
 :::
 
+::: Danger
+Make sure to adjust the `branch` that is passed to the hook as well as the script that is run, as it
+may differ, depending on what you want to deploy.
+ ```yaml
+ permissions:
+   contents: write
+ ```
+:::
+
 ### The full `release-build.yml` file
 ```yaml
 name: Release Build
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - main // [!code warning]
 
 permissions:
   contents: write
@@ -63,7 +70,7 @@ jobs:
       - name: Build website
         run: |
           npm install --non-interactive
-          npm run docs:build
+          npm run docs:build // [!code warning]
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
