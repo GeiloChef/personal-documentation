@@ -46,7 +46,7 @@ import './assets/main.css'
 createApp(App).mount('#app')
 ```
 
-Now you're able to use the tailwind classes in your project.*/
+Now you're able to use the tailwind classes in your project.
 
 ---
 
