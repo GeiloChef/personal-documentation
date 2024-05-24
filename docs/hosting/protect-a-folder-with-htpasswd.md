@@ -27,7 +27,7 @@ AuthUserFile  route/to/your/.htpasswd
 Require valid-user
 ```
 
-```text [.htaccess]
+```text [.htpasswd]
 admin:$2y$10$xhiTb7Bzh87Gjb48hCP9
 ```
 :::
