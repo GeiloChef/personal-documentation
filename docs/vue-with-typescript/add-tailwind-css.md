@@ -46,6 +46,22 @@ import './assets/main.css'
 createApp(App).mount('#app')
 ```
 
+Last step is to adjust the Tailwind config. This is needed to tell tailwind, which files you
+are using the shorthanded css classes in. 
+
+Here you have an example config for `./tailwind.config.js`
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [],
+  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
 Now you're able to use the tailwind classes in your project.
 
 ---
