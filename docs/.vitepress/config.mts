@@ -87,6 +87,7 @@ export default defineConfig({
         text: 'Vue with Typescript',
         items: [
           { text: 'Setting up a new project', link: '/vue-with-typescript/setting-up-new-vue-project' },
+          { text: 'ES Lint Setup', link: '/vue-with-typescript/add-eslint-config' },
           { text: 'Vue 3 Folder Structure', link: '/vue-with-typescript/folder-structure' },
           { text: 'Vue Router Configuration', link: '/vue-with-typescript/vue-router-configuration' },
           { text: 'Redirect if unauthorized', link: '/vue-with-typescript/vue-router-redirect-if-unauthorized' },
