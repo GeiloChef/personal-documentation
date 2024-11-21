@@ -12,7 +12,7 @@ Make sure you install the correct version (<Badge type="tip" text="^9.9.0" />), 
 default export to create the i18n instance in your config file.
 :::
 ```console
-npm install vue-i18n@9.9.0
+npm install vue-i18n
 ```
 
 ### Create Folder for translations
@@ -74,6 +74,20 @@ export const i18n = createI18n({
 
 ```typescript [core.ts (for constant)]
 // @/models/core.ts
+export interface LanguageItem {
+  key: string,
+  name: string,
+  momentLocale: string,
+  i18nLocale: string,
+  flagCode: string
+};
+
+export interface LanguagesObject {
+  german: LanguageItem,
+  english: LanguageItem,
+  spanish: LanguageItem
+};
+
 export const Languages: LanguagesObject = {
   german: {
     key: 'de', // general key that is used in the code
