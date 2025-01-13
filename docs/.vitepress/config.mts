@@ -112,25 +112,40 @@ export default defineConfig({
       {
         text: 'Vue with Typescript',
         items: [
-          { text: 'Setting up a new project', link: '/vue-with-typescript/setting-up-new-vue-project' },
+          {
+            text: 'Setting up a new project',
+            link: '/vue-with-typescript/setting-up-new-vue-project',
+            items: [
+              { text: 'Add Tailwind to Vue', link: '/vue-with-typescript/add-tailwind-css' },
+              { text: 'Add Vue I18n', link: '/vue-with-typescript/add-vue-i18n' },
+              { text: 'Add Fontawesome Icons', link: '/vue-with-typescript/add-fontawesome-icon-to-vue' },
+              { text: 'Add PrimeVue', link: '/vue-with-typescript/add-primevue' },
+            ]
+          },
           { text: 'ES Lint Setup', link: '/vue-with-typescript/add-eslint-config' },
           { text: 'Vue 3 Folder Structure', link: '/vue-with-typescript/folder-structure' },
-          { text: 'Vue Router Configuration', link: '/vue-with-typescript/vue-router-configuration' },
-          { text: 'Redirect if unauthorized', link: '/vue-with-typescript/vue-router-redirect-if-unauthorized' },
+          {
+            text: 'Vue Router Configuration',
+            link: '/vue-with-typescript/vue-router-configuration',
+            items: [
+              { text: 'Redirect if unauthorized', link: '/vue-with-typescript/vue-router-redirect-if-unauthorized' },
+            ]
+          },
           { text: 'Anti Corruption Layer for your API', link: '/vue-with-typescript/anti-corruption-layer' },
-          { text: 'Add Tailwind to Vue', link: '/vue-with-typescript/add-tailwind-css' },
-          { text: 'Add Vue I18n', link: '/vue-with-typescript/add-vue-i18n' },
-          { text: 'Add Fontawesome Icons', link: '/vue-with-typescript/add-fontawesome-icon-to-vue' },
-          { text: 'Add PrimeVue', link: '/vue-with-typescript/add-primevue' },
         ]
       },
       {
         text: 'VitePress',
         items: [
-          { text: 'Setup new Vitepress Project', link: '/vitepress/setup-new-vitepress-project' },
-          { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
+          {
+            text: 'Setup new Vitepress Project',
+            link: '/vitepress/setup-new-vitepress-project',
+            items: [
+              { text: 'Add .gitignore for VitePress', link: '/vitepress/add-gitignore-file' },
+              { text: 'Add Tailwind to Vitepress', link: '/vitepress/add-tailwind-css-to-vitepress' },
+            ]
+          },
           { text: 'Custom Theme and Components', link: '/vitepress/custom-theme-and-components' },
-          { text: 'Add Tailwind to Vitepress', link: '/vitepress/add-tailwind-css-to-vitepress' },
         ]
       },
     ],
