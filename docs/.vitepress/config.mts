@@ -84,6 +84,32 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Nuxt',
+        items: [
+          { text: 'How to get started', link: '/nuxt/setup-new-nuxt-project' },
+          {
+            text: 'Add Modules to Nuxt',
+            link: '/nuxt/modules/add-modules',
+            items: [
+              { text: 'i18n Module', link: '/nuxt/modules/i18n-nuxt-module' },
+              { text: 'PrimeVue Module', link: '/nuxt/modules/primevue-nuxt-module' },
+              { text: 'Tailwind CSS Module', link: '/nuxt/modules/tailwind-nuxt-module' },
+              { text: 'Fontawesome Module', link: '/nuxt/modules/font-awesome-nuxt-module' },
+              {
+                text: 'EsLint Module',
+                link: '/nuxt/modules/eslint-nuxt-module',
+                items: [
+                  {
+                    text: 'EsLint Example Config',
+                    link: '/nuxt/modules/eslint-example'
+                  },
+                ]
+              },
+            ]
+          },
+        ]
+      },
+      {
         text: 'Vue with Typescript',
         items: [
           { text: 'Setting up a new project', link: '/vue-with-typescript/setting-up-new-vue-project' },
