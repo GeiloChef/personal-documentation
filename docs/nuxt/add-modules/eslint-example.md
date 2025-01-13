@@ -11,7 +11,7 @@ This was used for Nuxt (<Badge type="tip" text="^3.15.1" />) and
 eslint (<Badge type="tip" text="^0.7.5" />) (@nuxt/eslint).
 
 If you have not set up your Nuxt project to work with eslint, you can check the 
-[setup guide](/nuxt/eslint-nuxt-module).
+[setup guide](/nuxt/add-modules/eslint-nuxt-module).
 :::
 
 

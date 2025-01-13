@@ -52,5 +52,5 @@ To get more information about the module, check out
 the [documentation](https://eslint.nuxt.com/packages/module).
 
 To get an already preset configuration, you can check out
-[this example](/docs/nuxt/eslint-example.md).
+[this example](/nuxt/add-modules/eslint-example.md).
 

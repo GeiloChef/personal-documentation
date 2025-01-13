@@ -89,19 +89,19 @@ export default defineConfig({
           { text: 'How to get started', link: '/nuxt/setup-new-nuxt-project' },
           {
             text: 'Add Modules to Nuxt',
-            link: '/nuxt/modules/add-modules',
+            link: '/nuxt/add-modules/add-modules',
             items: [
-              { text: 'i18n Module', link: '/nuxt/modules/i18n-nuxt-module' },
-              { text: 'PrimeVue Module', link: '/nuxt/modules/primevue-nuxt-module' },
-              { text: 'Tailwind CSS Module', link: '/nuxt/modules/tailwind-nuxt-module' },
-              { text: 'Fontawesome Module', link: '/nuxt/modules/font-awesome-nuxt-module' },
+              { text: 'i18n Module', link: '/nuxt/add-modules/i18n-nuxt-module' },
+              { text: 'PrimeVue Module', link: '/nuxt/add-modules/primevue-nuxt-module' },
+              { text: 'Tailwind CSS Module', link: '/nuxt/add-modules/tailwind-nuxt-module' },
+              { text: 'Fontawesome Module', link: '/nuxt/add-modules/font-awesome-nuxt-module' },
               {
                 text: 'EsLint Module',
-                link: '/nuxt/modules/eslint-nuxt-module',
+                link: '/nuxt/add-modules/eslint-nuxt-module',
                 items: [
                   {
                     text: 'EsLint Example Config',
-                    link: '/nuxt/modules/eslint-example'
+                    link: '/nuxt/add-modules/eslint-example'
                   },
                 ]
               },
