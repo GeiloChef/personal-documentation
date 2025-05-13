@@ -84,12 +84,23 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Deploy NestJs on vServer',
+        items: [
+          { text: 'Get Started', link: '/nestjs-deployment/get-started' },
+          { text: 'Prerequisites', link: '/nestjs-deployment/prerequisites' },
+          { text: 'Prepare your Project', link: '/nestjs-deployment/preparing-the-project' },
+          { text: 'Build your Project', link: '/nestjs-deployment/build-project' },
+          { text: 'Deploy to your Server', link: '/nestjs-deployment/deploy-to-server' },
+          { text: 'Reverse-Proxy (Nginx)', link: '/nestjs-deployment/reverse-proxy-nginx' },
+        ]
+      },
+      {
         text: 'Nuxt',
         items: [
           { text: 'How to get started', link: '/nuxt/setup-new-nuxt-project' },
           {
             text: 'Add Modules to Nuxt',
-            link: '/nuxt/add-modules/add-modules',
+            link: '/nuxt/add-modules/index',
             items: [
               { text: 'i18n Module', link: '/nuxt/add-modules/i18n-nuxt-module' },
               { text: 'PrimeVue Module', link: '/nuxt/add-modules/primevue-nuxt-module' },
